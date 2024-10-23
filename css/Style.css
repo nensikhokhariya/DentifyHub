@@ -356,6 +356,7 @@ header.header-main .page-center {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 99;
     display: none;
     transition: height 0.3s ease;
   }
@@ -374,7 +375,7 @@ header.header-main .page-center {
   .header-main .nav-links.show {
     display: flex;
     padding-top: 50px;
-    height: 100%;
+    height: 100vh;
   }
 
   /* For mobile dropdown */
@@ -434,6 +435,7 @@ header.header-main .page-center {
     padding: 10px;
     text-align: center;
     position: absolute;
+    z-index: 99;
     bottom: 0;
     left: 0;
   }
