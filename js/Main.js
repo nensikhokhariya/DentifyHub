@@ -3,12 +3,20 @@ $(document).ready(function() {
     const $navLinks = $('.nav-links');
     const $hamburgerButton = $('.hamburger-button');
     const $dropdowns = $('.dropdown > a');
+    const $body = $('body'); // Select the body element
 
     // Toggle the main navigation (hamburger menu)
     $hamburger.on('click', function() {
         $navLinks.toggleClass('show');
         $hamburgerButton.toggleClass('show');
         $hamburger.toggleClass('active'); // Toggle 'X' icon for hamburger
+
+        // Disable scrolling when menu is open
+        if ($navLinks.hasClass('show')) {
+            $body.addClass('no-scroll'); // Add the no-scroll class to body
+        } else {
+            $body.removeClass('no-scroll'); // Remove the no-scroll class from body
+        }
     });
 
     // Handle dropdown functionality in mobile view
@@ -21,16 +29,13 @@ $(document).ready(function() {
 
         // Check if the dropdown is currently visible
         if ($dropdownMenu.is(':visible')) {
-            // If it's visible, slide up to close it
             $dropdownMenu.slideUp(300); // Slide up animation
             $parentDropdown.removeClass('open'); // Remove 'open' class
         } else {
-            // If it's not visible, slide down to open it
             $dropdownMenu.slideDown(300); // Slide down animation
             $parentDropdown.addClass('open'); // Add 'open' class for styling
             
-            // Close other dropdowns
-            closeOtherDropdowns($parentDropdown);
+            closeOtherDropdowns($parentDropdown); // Close other dropdowns
         }
     });
 
@@ -50,5 +55,39 @@ $(document).ready(function() {
     $(document).on('click', function() {
         $('.dropdown-menu').slideUp(300); // Close all dropdowns
         $('.dropdown').removeClass('open'); // Remove 'open' class from all dropdowns
+
+        // Re-enable scrolling when menu is closed
+        $body.removeClass('no-scroll');
     });
 });
+
+
+
+function moveContainers() {
+    if ($(window).width() <= 991) {
+            $('.hamburger-button').insertAfter('.header-main .nav-links li.nav-list:last-child');
+    }
+    else {
+      // Optionally reset the layout when the screen is larger
+      // $('.user-container').insertBefore('.left-container');
+    }
+  }
+
+  // Run on initial load
+  $(document).ready(function () {
+    moveContainers(); // Call on page load
+    $(window).on('resize', moveContainers()); // Call on window resize
+  });
+
+
+//   Stiky Header
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1) {
+        $("header").addClass("scroll");
+      } else {
+        $("header").removeClass("scroll");
+      }
+    });
+  });

@@ -1,0 +1,9 @@
+/* Banner section */
+
+.banner-section{
+    background-image: url('../Images/BG.png');
+    padding: 100px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
