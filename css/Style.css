@@ -60,26 +60,32 @@ p {
 
 h1 {
   font-size: 58px;
+  line-height: 70px;
 }
 
 h2 {
   font-size: 38px;
+  line-height: 45px;
 }
 
 h3 {
   font-size: 30px;
+  line-height: 45px;
 }
 
 h4 {
   font-size: 18px;
+  line-height: 27px;
 }
 
 h5 {
   font-size: 16px;
+  line-height: 27px;
 }
 
 h6 {
   font-size: 14px;
+  line-height: 27px;
 }
 
 @media screen and (max-width: 767px) {
@@ -152,6 +158,10 @@ input:focus {
   font-size: 16px;
   line-height: 28.4px;
   font-weight: 400;
+}
+
+.text-blue{
+  color: #07A5C3;
 }
 
 /* ==================================================================================================================== */

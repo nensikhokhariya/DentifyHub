@@ -2,8 +2,38 @@
 
 .banner-section{
     background-image: url('../Images/BG.png');
-    padding: 100px 0;
+    padding: 200px 0 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.banner-section .main-banner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -30px;
+}
+
+.banner-section .banner-content-block{
+    width: calc(40% - 60px);
+    margin: 0 30px;
+}
+
+.banner-section .banner-image-block{
+    width: calc(60% - 60px);
+    margin: 0 30px;
+    position: relative;
+    z-index: 1;
+}
+.banner-section .banner-vector-img{
+    position: absolute;
+    top: -15%;
+    z-index: -1;
+}
+
+.banner-section .banner-image-block img{
+    display: flex;
+    align-items: end;
+    position: relative;
 }
