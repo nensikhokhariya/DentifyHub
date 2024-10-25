@@ -1,0 +1,61 @@
+@media(max-width: 1500px) {
+    .banner-section .main-banner-wrapper {
+        margin: 0;
+    }
+}
+
+/* Laptop screen */
+@media(max-width: 1199px) {
+    .banner-section .banner-happy-patient {
+        margin: 25px 0 40px;
+    }
+
+}
+
+/* Tablet screeen */
+@media(max-width: 991px) {
+    .banner-section .banner-content-block {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .banner-section .banner-image-block {
+        width: 100%;
+        margin: 0;
+    }
+    .about-section {
+        padding: 100px 0;
+    }
+    .about-section .right-content-block {
+        width: calc(50% - 22px);
+        margin-left: 22px;
+    }
+    .about-section .left-image-block {
+        width: calc(50% - 22px);
+        margin-right: 22px;
+    }
+}
+
+
+/* mobile screen */
+@media(max-width: 767px) {
+    .banner-section {
+        padding: 150px 0 0;
+    }
+    .about-section {
+        padding: 60px 0;
+    }
+    .about-section .left-image-block {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-section .right-content-block {
+        width: 100%;
+        margin-left: 0;
+    }
+    .about-section .about-button-block {
+        margin-top: 20px;
+    }
+
+}
