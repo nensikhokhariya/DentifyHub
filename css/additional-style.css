@@ -158,3 +158,69 @@
     width: 16px;
     height: 16px;
 }
+
+/* Our services section */
+.our-services-section {
+    padding: 0 0 125px;
+}
+
+.our-services-section .services-heading-block{
+    text-align: center;
+    max-width: 788px;
+    margin: 0 auto 50px;
+}
+.our-services-section .services-heading-block h2{
+    margin: 0 0 18px;
+}
+.our-services-section .services-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.our-services-section .inner-service-card{
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    box-shadow: 2px 2px 4px 0px #0000000D;
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+.our-services-section .inner-service-card img{
+    width: 60px;
+    height: 60px;
+    margin:  0 0 30px;
+}
+.our-services-section .inner-service-card h4{
+    margin: 0 0 20px;
+}
+
+/* Why choose */
+
+.why-choose-section{
+    padding: 0 0 125px;
+}
+
+.why-choose-section .main-why-choose-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.why-choose-section .left-content-block{
+    width: calc(50% - 20px);
+    margin: 0 10px;
+}
+
+.why-choose-section .right-image-block{
+    width: calc(50% - 20px);
+    margin: 0 10px; 
+}
+.why-choose-section .why-choose-lists ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.why-choose-section .why-choose-lists ul li{
+    color: #5E5E5E;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+}

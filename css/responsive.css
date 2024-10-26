@@ -34,6 +34,10 @@
         width: calc(50% - 22px);
         margin-right: 22px;
     }
+    .our-services-section .inner-service-card{
+        width: calc(50% - 20px);
+        margin: 0 10px 20px;
+    }
 }
 
 
@@ -56,6 +60,14 @@
     }
     .about-section .about-button-block {
         margin-top: 20px;
+    }
+    .our-services-section {
+        padding: 0 0 60;
+    }
+    .our-services-section .inner-service-card {
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 20px 20px;
     }
 
 }
